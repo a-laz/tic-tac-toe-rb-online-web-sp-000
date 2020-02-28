@@ -119,18 +119,18 @@ def draw?(board)
 end
 
 def over?(board)
-  #draw?(board) || won?(board)
+  draw?(board) || won?(board)
   #binding.pry
-  if draw?(board) == true
-    return true
-  elsif full?(board) == true && won?(board).class == Array
-    return true
-  elsif won?(board).class == Array && full?(board) == false
-    return true
-  else
-    return false
-  end
-end
+#  if draw?(board) == true
+#    return true
+#  elsif full?(board) == true && won?(board).class == Array
+#    return true
+#  elsif won?(board).class == Array && full?(board) == false
+#    return true
+#  else
+#    return false
+#  end
+#end
 
 def winner(board)
   if won?(board) == nil
