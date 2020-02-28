@@ -119,7 +119,7 @@ def draw?(board)
 end
 
 def over?(board)
-  draw?(board) || won?(board)
+  won?(board) || draw?(board)
   #binding.pry
 #  if draw?(board) == true
 #    return true
