@@ -102,7 +102,7 @@ def won?(board)
 end
 
 def full?(board)
-  binding.pry
+  #binding.pry
   if board.any?{|index| index == " "} == false
     return true
   else
@@ -119,7 +119,7 @@ def draw?(board)
 end
 
 def over?(board)
-  binding.pry
+  #binding.pry
   if draw?(board) == true
     return true
   elsif full?(board) == true && won?(board).class == Array
