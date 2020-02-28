@@ -126,7 +126,7 @@ def over?(board)
   elsif full?(board) == true && won?(board).class == Array
     return true
   elsif draw?(board) == true
-    return true 
+    return true
   else
     return false
   end
