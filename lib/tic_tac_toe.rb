@@ -130,7 +130,7 @@ def over?(board)
   #else
   #  return false
   #end
-#end
+end
 
 def winner(board)
   if won?(board) == nil
