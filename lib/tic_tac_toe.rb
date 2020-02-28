@@ -102,6 +102,7 @@ def won?(board)
 end
 
 def full?(board)
+  binding.pry
   if board.any?{|index| index == " "} == false
     return true
   else
