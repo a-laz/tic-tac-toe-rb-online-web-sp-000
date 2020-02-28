@@ -122,7 +122,7 @@ def over?(board)
   binding.pry
   if draw?(board) == true
     return true
-  elsif full?(board) == true
+  elsif full?(board) == true && won?(board).class == Array
     return true
   elsif won?(board).class == Array && full?(board) == false
     return true
